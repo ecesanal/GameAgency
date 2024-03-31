@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="16dp">
+
+    <!-- Kullanıcı Adı Girişi -->
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text" />
+
+    <!-- Şifre Girişi -->
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_username"
+        android:layout_marginTop="8dp"
+        android:hint="Şifre"
+        android:inputType="textPassword" />
+
+    <!-- Beni Hatırla CheckBox -->
+    <CheckBox
+        android:id="@+id/checkBox_rememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_password"
+        android:layout_marginTop="8dp"
+        android:text="Beni Hatırla" />
+
+    <!-- Cinsiyet Seçimi -->
+    <TextView
+        android:id="@+id/textView_genderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox_rememberMe"
+        android:layout_marginTop="16dp"
+        android:text="Cinsiyet Seçimi"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_genderTitle"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek" />
+
+        <RadioButton
+            android:id="@+id/radioButton_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kadın" />
+
+        <!-- İsteğe bağlı olarak diğer cinsiyet seçenekleri eklenebilir -->
+    </RadioGroup>
+
+    <!-- Giriş Yap Butonu -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup_gender"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#8500BCD4"
+        android:text="Giriş Yap" />
+
+</RelativeLayout>
