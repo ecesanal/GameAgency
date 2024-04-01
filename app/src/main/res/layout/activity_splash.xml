@@ -8,14 +8,16 @@
     android:gravity="center">
 
     <!-- Örnek olarak bir ImageView ekliyorum, bu sizin splash ekranınıza uygun bir görsel olabilir -->
+
+
     <ImageView
         android:id="@+id/imageView_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:background="#00018685"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_launcher_foreground"
+        app:srcCompat="@drawable/download_1915750_1280" />
 
     <!-- İsteğe bağlı olarak ProgressBar ekleyebilirsiniz -->
     <!--<ProgressBar

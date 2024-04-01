@@ -11,7 +11,7 @@
         android:id="@+id/editText_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Kullanıcı Adı"
+        android:hint="E POSTA"
         android:inputType="text" />
 
     <!-- Şifre Girişi -->
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editText_username"
         android:layout_marginTop="8dp"
-        android:hint="Şifre"
+        android:hint="ŞİFRE"
         android:inputType="textPassword" />
 
     <!-- Beni Hatırla CheckBox -->
