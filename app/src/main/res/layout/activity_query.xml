@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:padding="16dp">
+
+    <!-- Arama Kriteri Girişi -->
+
+    <!-- Arama Butonu -->
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Arama Kriteri Giriniz"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_search"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="ARA"
+        android:textColor="#972424" />
+
+    <!-- Sorgu Sonuçları -->
+    <ListView
+        android:id="@+id/listView_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_search"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

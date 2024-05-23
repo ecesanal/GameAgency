@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169741636331",
+    "project_id": "gameagency",
+    "storage_bucket": "gameagency.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169741636331:android:9ee0e072acace4f635e4ae",
+        "android_client_info": {
+          "package_name": "com.ilkdeneme.gameagency"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjOirO6MR-jT1EAohjvWLLlfzLTfj_Hf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
