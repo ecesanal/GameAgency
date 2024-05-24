@@ -12,7 +12,7 @@ public class BlurBuilder {
 
     public static Bitmap blur(Context context, Bitmap image) {
         int width = Math.round(image.getWidth() * 0.4f);
-        int height = Math.round(image.getHeight() * 0.4f);
+        int height = Math.round(image.getHeight() * 0.4f); // get height
 
         Bitmap inputBitmap = Bitmap.createScaledBitmap(image, width, height, false);
         Bitmap outputBitmap = Bitmap.createBitmap(inputBitmap);
