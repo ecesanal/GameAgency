@@ -20,8 +20,8 @@
 
     <LinearLayout
         android:id="@+id/image_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="364dp"
+        android:layout_height="513dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,24 +31,27 @@
         <ImageView
             android:id="@+id/image1"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="270dp"
             android:layout_margin="8dp"
+            android:background="@drawable/images"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground" />
 
         <ImageView
             android:id="@+id/image2"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="271dp"
             android:layout_margin="8dp"
+            android:background="@drawable/images__1_"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground" />
 
         <ImageView
             android:id="@+id/image3"
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="271dp"
             android:layout_margin="8dp"
+            android:background="@drawable/images"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foreground" />
     </LinearLayout>
@@ -57,22 +60,9 @@
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_container" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="#B9FFFFFF"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/image_container" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

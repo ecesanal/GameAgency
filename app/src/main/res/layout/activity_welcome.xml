@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="189dp"
+        android:layout_height="159dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -48,7 +48,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="169dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -79,7 +79,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="186dp"
+        android:layout_height="157dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -122,18 +122,13 @@
         android:text="ARA"
         android:textColor="#972424" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar6"
+    <WebView
+        android:id="@+id/webview1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#B9FFFFFF"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_height="42dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Webde Aç"
+        android:textColor="#972424" />
 
 </LinearLayout>
 

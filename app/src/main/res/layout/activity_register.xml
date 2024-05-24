@@ -30,6 +30,7 @@
                 android:padding="24dp">
 
                 <!-- Başlık -->
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -64,6 +65,17 @@
                     android:textColor="#000000" />
 
                 <!-- Cinsiyet Seçimi -->
+                <EditText
+                    android:id="@+id/editTextBirthArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFFF"
+                    android:hint="Doğum Yeri"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
                 <TextView
                     android:id="@+id/textView_genderTitle"
                     android:layout_width="wrap_content"
