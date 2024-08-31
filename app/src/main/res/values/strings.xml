@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">GameAgency</string>
-    
+
+    <string name="Erkek">Erkek</string>
+    <string name="kadin">Kadın</string>
+    <string name="Kadin">Kadın</string>
+    <string name="ad_soyad">Ad Soyad</string>
+
 </resources>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:backgroundTint="#8500BCD4"
+    android:background="@color/teal_200"
     android:padding="16dp">
 
     <!-- Arama Kriteri Girişi -->
@@ -23,6 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editText_search"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="ARA"
+        android:textColor="#972424" />
         android:backgroundTint="#8500BCD4"
         android:text="Ara" />
 

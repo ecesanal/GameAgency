@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -38,5 +39,123 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="#4CAF50"/>
 
+        android:background="@color/teal_200"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#F8FBFB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Başlık -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kayıt Ol"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Kullanıcı Adı Girişi -->
+                <EditText
+                    android:id="@+id/editTextEmail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#FFFFFF"
+                    android:hint="E-posta"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
+                <!-- Şifre Girişi -->
+                <EditText
+                    android:id="@+id/editTextPassword1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFFF"
+                    android:hint="Şifre"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
+                <!-- Cinsiyet Seçimi -->
+                <EditText
+                    android:id="@+id/editTextBirthArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFFF"
+                    android:hint="Doğum Yeri"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView_genderTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Cinsiyet Seçimi"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Erkek" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kadın" />
+
+                    <!-- İsteğe bağlı olarak diğer cinsiyet seçenekleri eklenebilir -->
+                </RadioGroup>
+
+                <!-- Kullanım Koşulları Kabulü -->
+                <CheckBox
+                    android:id="@+id/checkBox_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Kullanım koşullarını okudum ve kabul ediyorum"
+                    android:textColor="#000000" />
+
+                <!-- Kayıt Ol Butonu -->
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Kayıt Ol"
+                    android:textColor="#972424"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </ScrollView>
